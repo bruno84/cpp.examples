@@ -28,7 +28,7 @@ int main()
     tDouble = 10.2;
     tBool = true;
 
-    cout << "Valores de cada variável: \n";
+    cout << "Valores de cada variavel: \n";
     cout << "tChar: " << tChar << endl;
 	cout << "tShort: "<< tShort << endl;
 	cout << "tInt: " << tInt << endl;

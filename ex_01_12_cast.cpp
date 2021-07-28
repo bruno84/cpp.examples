@@ -11,13 +11,13 @@ int main()
     // CAST AUTOMATICO:
     a = 200903280945;         
     b = 100000000   * 2009;     // int * int = int
-    c = 100000000LL * 2009;     // ll * int = ll
+    c = 100000000LL * 2009;     // ll  * int = ll
     d = 100000000   * 2009LL;   // int * ll = ll
     e = 10000000000 * 2009;     // ll  * int = ll
 
     cout << "a: " << a << endl;         // 200903280945
     cout << "b: " << b << endl;         // -963462912
-    cout << "c: " << c << endl;         // 200900000000
+    cout << "c: " << c << endl;         // 200.900.000.000
     cout << "d: " << d << endl;         // 200900000000
     cout << "e: " << e << endl<<endl;   // 20090000000000
     
