@@ -14,11 +14,12 @@ int main()
     cout << "Qual o valor final: "; 
     cin >> vf; 
  
- 	cont = vi;
+ 	cont = vi; // inicializacao
  
-    while( cont <= vf ) {      
-        cout << "cont: " << cont << endl;
-        cont++; 
+    while( cont <= vf )     // verificacao
+    {      
+        cout << "cont: " << cont << endl;   // bloco
+        cont++;     // atualizacao (incremento/decremento)
     } 
     
     system("pause");

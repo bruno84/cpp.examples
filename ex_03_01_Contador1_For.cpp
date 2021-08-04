@@ -15,9 +15,11 @@ int main()
     cin >> vf; 
     
     for(cont = vi; cont <= vf; cont++) {
-        cout << "cont: " << cont << endl;
+        cout << "cont (durante): " << cont << endl;
     }
-        
+    
+    cout << "cont (final): " << cont << endl;
+
     system("pause");
     return 0;
 }

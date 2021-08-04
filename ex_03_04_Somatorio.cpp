@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int cont, vi, vf, somatorio; 
+    int vi, vf, somatorio; 
  
     cout << "Qual o valor inicial: "; 
     cin >> vi; 
@@ -16,7 +16,7 @@ int main()
     
     somatorio = 0;
     
-    for(cont = vi; cont <= vf; cont++) {
+    for(int cont = vi; cont <= vf; cont++) {
         somatorio = somatorio + cont;
     }
     

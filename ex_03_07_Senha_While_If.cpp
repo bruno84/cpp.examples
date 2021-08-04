@@ -23,6 +23,7 @@ int main()
 	
 	cout << "Senha certa \n";
 	
+	system("pause");
 	return 0;
 }
 

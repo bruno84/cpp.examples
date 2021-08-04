@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int opcao = 1;   // Inicializo com qq valor, exceto zero 
+    int opcao;   
     
     do
     {
