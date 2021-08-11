@@ -8,7 +8,7 @@ int main()
 {    
 	int meuVetor[3];
 	
-	cout << "size: " << sizeof(meuVetor) << endl;
+	cout << "size: " << sizeof(meuVetor) << "bytes" << endl;	// bytes
 	
 	cout << "\n" << "Atribuicao direta... \n";
 	meuVetor[0] = 10;    // Atribuição direta 
@@ -37,6 +37,7 @@ int main()
     cout << meuVetor[2] << endl;  
     
 	cout << "\n" << "Imprimindo enderecos... \n";	
+	cout << &meuVetor << endl;
 	cout << &meuVetor[0] << endl;   
     cout << &meuVetor[1] << endl;   
     cout << &meuVetor[2] << endl;

@@ -28,10 +28,10 @@ int main()
 	
 	cout << "\n\n" << "EXIBIR MATRIZ... \n";
 
-    for(int l=0; l<TAM_LINHA; l++)
+    for(int l=0; l<TAM_LINHA; l++)	// linha
 	{
-        for(int c=0; c<TAM_COLUNA; c++) {
-            cout << matriz[l][c] << " ";
+        for(int c=0; c<TAM_COLUNA; c++) {	// coluna
+            cout << matriz[l][c] << "\t";
         }
         cout << "\n";
     }

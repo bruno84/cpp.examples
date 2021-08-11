@@ -14,7 +14,7 @@ int main()
 
 	// COPIANDO VETOR
 	cout << endl << "Copiando conteudos do vetor... \n";
-	for(int i=0; i < SIZE; i++) {
+	for(int i=0; i<SIZE; i++) {
         vetor2[i] = vetor1[i];
     }
 

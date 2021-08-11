@@ -7,11 +7,11 @@ using namespace std;
 int main()
 {
 	const int SIZE = 5;
-    int vetor1[SIZE] = {10, 20, 30, 40, 50};
+    int vetor1[SIZE] = {10, 40, 30, 0, 20}; 
 
 	cout << "Exibindo ordem inversa do vetor: \n\n";
-    for(int j=SIZE-1; j >= 0; j--) {
-        cout << vetor1[j] << endl;
+    for(int i=SIZE-1; i >= 0; i--) {
+        cout << vetor1[i] << endl;
     }
 
     printf("\n\n");
