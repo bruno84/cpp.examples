@@ -17,6 +17,8 @@ int main()
 	cout << "caracteres em: vetorChar1: " << strlen(vetorChar1) << endl;
 	cout << "caracteres em: vetorChar2: " << strlen(vetorChar2) << endl;
 	
+	// vetorChar3 = "Maria eh vetorChar3";		// nao pode!
+	
     strcpy(vetorChar3, "Maria eh vetorChar3"); 		// Atribuição
 
 	cout << "Digite um numero: ";

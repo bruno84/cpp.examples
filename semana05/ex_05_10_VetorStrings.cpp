@@ -12,9 +12,7 @@ int main()
 	
 	for(int i=0; i<SIZE; i++) {
 		cout << "Digite um nome: ";
-		//cin >> nomes[i];		// Nao eh adequado para strings que contenham espaco.
 		getline( cin, nomes[i] );
-		
 	}
 
 	for(int i=0; i<SIZE; i++) {

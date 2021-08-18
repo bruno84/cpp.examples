@@ -17,7 +17,7 @@ int main()
 	
 	cout << "Qtd de caracteres: " << strlen(meuNome) << endl;
 	
-	strcpy(mensagem, "");          		// Atribui a uma frase vazia, se não, pode ficar com “lixo” 
+	strcpy(mensagem, "Oi, ");          	
 	strcpy(saudacao, ", bom dia!");     // Atribui com sua frase de saudação 
 	
 	strcat(mensagem, meuNome);     // Une as duas strings: “” + “Bruno ” 

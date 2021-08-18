@@ -6,6 +6,7 @@ using namespace std;
 
 // Prof: Bruno Monteiro
 // OBJETIVOS: Fazer conversões entre strings e números
+// VER: https://www.cplusplus.com/reference/cstring/
 // VER: https://www.cplusplus.com/reference/cstdlib/
 
 int main()
@@ -17,7 +18,7 @@ int main()
     cout << "numeroFloatStr: " << numeroFloatStr << endl;
 
     // Converte: string para int
-    char numeroIntStr[30] = "60";
+    char numeroIntStr[30] = "6000";
     int numeroInt;
     numeroInt = atoi(numeroIntStr);
     cout << "numeroInt: " << numeroInt << endl;

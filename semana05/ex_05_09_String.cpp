@@ -40,12 +40,15 @@ int main()
     cin >> x;
     
     
-    str6 = "se for string eu posso atribuir! =D";
-    cout << "caracteres em: str6 = " << str6.size() << endl;
+    str6 = "se for string eu posso atribuir! =D";		// Diferenca: posso atribuir sem precisar da strcpy()
+    
+    cout << "caracteres em: str6 = " << str6.size() << endl;	// Diferenca: nao preciso usar strlen()
     
     // vetorChar1 = vetorChar2;		// ATENCAO: se char[] nem tente!
     
     str7 = str6;		// se for string pode!
+    
+    str6 = "mudei tudo!";
     
     cout << "Digite str8 (nome completo): ";
     fflush(stdin);
@@ -63,7 +66,7 @@ int main()
 	cout << "str8: " << str8 << endl;
 
 	// Manipulo a string da mesma forma que como vetor de char:
-	for(int i=0; i<=str8.size(); i++) {	
+	for(int i=0; i<str8.size(); i++) {	
     	cout << "[" << i << "]: " << str8[i] << " ";
     }
 
