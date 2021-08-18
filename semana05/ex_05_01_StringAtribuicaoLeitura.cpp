@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	int x;
-	char str1[40] = {'A', 'D', 'R', 'I', 'A', 'N', 'A'};  	// Inicialização "trabalhosa". 
+	char str1[40] = {'A', 'D', 'R', 'I', 'A', 'N', 'A', '\0'};  	// Inicialização "trabalhosa". 
     char str2[40] = "Bruno"; 								// Inicialização "mais fácil"	ATENÇÃO!!! Isso só pode ser feito na inicialização da string! Nunca para uma atribuição.
     char str3[40];
     char str4[40];
