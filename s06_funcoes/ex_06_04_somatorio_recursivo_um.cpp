@@ -5,20 +5,24 @@ using namespace std;
 // Prof: Bruno Monteiro
 
 // Assinatura da função: permite chamar a função antes de sua declaração.
-int somatorio(int);	
+int somatorio(int);
 
 int main()
 {
     int n;
 
     cout << "Digite n: ";
-    cin >> n;
+    cin >> n;	// 3
 
-    cout << "Somatorio = " << somatorio(n) << endl;
+    cout << "Somatorio = " << somatorio(n) << endl; // 6
 
     system("pause");
     return 0;
 }
+
+// PILHA:
+
+// main()
 
 int somatorio(int n)
 {
@@ -26,7 +30,7 @@ int somatorio(int n)
 
 	cout << "n = " << n << endl;
 
-    if(n < 1) 
+    if(n == 0) 
     {
 		cout << "fim \n";
 		r = 0;

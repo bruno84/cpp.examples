@@ -5,16 +5,20 @@ using namespace std;
 // Prof: Bruno Monteiro
 
 int varGlobal = 5;
+int x = 10;
 
 void minhaFuncao(int varArgum) 
 { 
 	cout << "2. iniciando minhaFuncao \n\n"; 
 	
     int varLocal = 20; 
+    int x = 1000;
     
-    cout << "varGlobal = " << varGlobal << endl; 
-    cout << "varLocal  = " << varLocal << endl; 
-    cout << "varArgum  = " << varArgum << endl<<endl;
+    cout << "varGlobal = " << varGlobal << endl; 	//  5
+    cout << "varLocal  = " << varLocal << endl; 	// 20
+    cout << "varArgum  = " << varArgum << endl;		// 40
+	
+	cout << "x = " << x << endl<<endl; 		// 1000
 	
 	cout << "3. encerrando minhaFuncao \n\n";  
 } 

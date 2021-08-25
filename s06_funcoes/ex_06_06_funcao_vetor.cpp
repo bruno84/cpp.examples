@@ -25,14 +25,16 @@ int somarVetor( int vet[], int size )
     return r;
 }
 
+// cenas dos próximos capítulos...
 void inverterVetor( int vetor1[], int vetor2[], int size ) 
-{ 	
+{
 	cout << endl << "inverterVetor... \n"; 
 	
     for(int i=0, f=size-1 ;  i<size ;  i++, f--) {
         vetor2[i] = vetor1[f];
     }
 }
+
 
 int main()
 {
@@ -41,10 +43,12 @@ int main()
     int vetor1[] = {10, 20, 30, 40, 50};	// original
     int vetor2[SIZE];						// invertido
 
+	cout << endl << "vetor1: ";
 	exibirVetor(vetor1, SIZE);
 
 	inverterVetor(vetor1, vetor2, SIZE);
 
+	cout << endl << "vetor2: ";
 	exibirVetor(vetor2, SIZE);
 
 	cout << endl << "somarVetor: " << somarVetor(vetor1, SIZE) << endl;
