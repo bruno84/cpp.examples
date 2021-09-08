@@ -10,7 +10,6 @@ struct sFicha
     int idade;
 };
 
-
 int main()
 {
 	const int SIZE = 3;

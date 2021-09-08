@@ -11,38 +11,38 @@ conjunto de valores que uma variavel pode assumir
 
 // DECLARACAO
 
-enum cores {VERMELHO, AMARELO, VERDE, AZUL, PRETO};
+enum Cores {VERMELHO, AMARELO, VERDE, AZUL, PRETO};
 // 				0, 		 1, 	 2, 	3, 	  4
 
-enum bits {UM=1, DOIS=2, QUATRO=4, OITO=8};
+enum Bits {UM=1, DOIS=2, QUATRO=4, OITO=8};
 
-enum meses {JAN=1, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ};
+enum Meses {JAN=1, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ};
 //			  1		2	 3	  4	   5	6	 7	  8	   9   10	11	 12
 
 // OBS: esta notacao permite introduzir escopo ao enum, tratando-os como classes:
-enum class pacote { PEQUENO, GRANDE, LARGO, JUMBO};
-//					  0			1		2	  3
+enum class TamPacote { PEQUENO, GRANDE, LARGO, JUMBO};
+//					  	0		   1	  2	     3
 
-enum class camisa { PEQUENO, MEDIO, GRANDE, EXTRAGRANDE };
-//					  0			1	   2	     3
+enum class TamCamisa { PEQUENO, MEDIO, GRANDE, EXTRAGRANDE };
+//					  	0		  1	      2	        3
 
 int main()
-{
+{	
     // ACESSANDO
     cout << "enum cores, ex: " << VERMELHO << endl;		// 0
     cout << "enum bits, ex: " << OITO << endl;			// 8
 	cout << "enum meses, ex: " << FEV << endl;			// 2
 	
 	int cor1 = AMARELO;
-	cores cor2 = VERDE; // So pode receber elemento do enum "cores"
+	Cores cor2 = VERDE; // So pode receber elemento do enum "cores"
 		
 	cout << "cor1: " << cor1 << endl;	// 1
 	cout << "cor2: " << cor2 << endl;	// 2
 	
 	// Acessando um enum como objeto:
 	// OBS: as linhas abaixo so funcionam com compilador da versao C++11
-	int leite  = (int) pacote::GRANDE; 	// fiz cast explicito
-  	int social = (int) camisa::GRANDE; 	// fiz cast explicito
+	int leite  = (int) TamPacote::GRANDE; 	// fiz cast explicito
+  	int social = (int) TamCamisa::GRANDE; 	// fiz cast explicito
 
 	cout << "leite: "  << leite << endl;	// 1
 	cout << "social: " << social << endl;	// 2

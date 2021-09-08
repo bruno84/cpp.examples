@@ -6,8 +6,8 @@ using namespace std;
 
 // OBS: em uma uniao, apenas um campo pode ser atribuido.
 
-// DECLARAÇÃO 
-union sIdentificador
+// DECLARACAO 
+union uIdentificador
 {
     int codigo;
     int serial;
@@ -16,18 +16,18 @@ union sIdentificador
 
 int main()
 {
-    sIdentificador id;
+    uIdentificador identificador;
 
     // ATRIBUINDO
     cout << "Informe o codigo: ";
-	cin >> id.codigo;
+	cin >> identificador.codigo;
     	
     cout << "Informe o serial: ";
-	cin >> id.serial;
+	cin >> identificador.serial;
 
     // ACESSANDO
-    cout << "codigo: " << id.codigo << endl;
-    cout << "serial: " << id.serial << endl;
+    cout << "codigo: " << identificador.codigo << endl;
+    cout << "serial: " << identificador.serial << endl;
 	
 	/* 
 		OBS: se houver mais de um campo atribuido, 
