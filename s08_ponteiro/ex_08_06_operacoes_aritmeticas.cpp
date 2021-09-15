@@ -14,10 +14,10 @@ void imprimeVetorNormal(int *v, int size)
     for(int i=0; i<size; i++) 
 	{
         // Incremento referencia do ponteiro
-        pTemp = v+i;
+        pTemp = v+i; // 0, 1, 2
         
         cout << " pTemp: " <<  pTemp << endl;
-        cout << "*pTemp: " << *pTemp << endl; 	//	*(v+i)
+        cout << "*pTemp: " << *pTemp << endl; 	//	*(v+i)  // 1
     }
 }
 
@@ -36,7 +36,7 @@ void imprimeVetorInvertido(int *v, int size)
     for(int i=0; i<size; i++) 
 	{
         // Decremento referencia do ponteiro
-        pTemp = v-i;
+        pTemp = v-i; // 0, 1, 2
 		        
         cout << " pTemp: " <<  pTemp << endl;
         cout << "*pTemp: " << *pTemp << endl; 	//	*(v-i)
@@ -49,6 +49,7 @@ int main()
     int vetor[] = {1, 3, 5};
 
     imprimeVetorNormal(vetor, 3);
+    
     imprimeVetorInvertido(vetor, 3);
 
     cout << "\n\n";

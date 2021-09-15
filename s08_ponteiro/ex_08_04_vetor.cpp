@@ -11,7 +11,10 @@ int main()
 	int  vetor1[] = {1, 3, 5};
 	int* vetor2 = NULL; 
 	
-	cout << "endereco de vetor1: " << vetor1 << endl;
+	cout << "endereco de vetor1: " << vetor1 << endl; // 0x6ffe00
+	cout << "endereco de vetor1 indice0: " << &vetor1[0] << endl;  // 0x6ffe00                  
+	cout << "endereco de vetor1 indice1: " << &vetor1[1] << endl;  // 0x6ffe04
+	cout << "endereco de vetor1 indice2: " << &vetor1[2] << endl;  // 0x6ffe08
 	
 	vetor2 = vetor1;
 	

@@ -9,12 +9,12 @@ int main()
     int  x = 10;
     int* p = &x;	// ponteiro eh uma variavel que armazena endereco
 
-	cout << "x (bytes): \t " << sizeof(x) << endl;
-    cout << "p (bytes): \t " << sizeof(p) << endl<<endl;
+	cout << "x (bytes): \t " << sizeof(x) << endl;			// 4 (bytes)
+    cout << "p (bytes): \t " << sizeof(p) << endl<<endl;	// 4 (32 bits) ou 8 (64 bits)
 	
-    cout << " x (valor de x): \t " << x << endl;		// 10
+    cout << " x (valor de x): \t " <<  x << endl;		// 10
     cout << "&x (ender de x): \t " << &x << endl;		// endereço de x
-    cout << " p (ender de x): \t " << p << endl;			// endereço de x
+    cout << " p (ender de x): \t " <<  p << endl;		// endereço de x
     cout << "*p (valor de x): \t " << *p << endl;		// 10
     cout << "&p (ender de p): \t " << &p << endl<<endl;	// endereco da variavel p
 

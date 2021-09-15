@@ -18,7 +18,7 @@ int main()
 	cout << "1. numero (valor): \t " << numero << endl;
 	cout << "2. numero (ender): \t " << &numero << endl;
     incrementa(numero);
-    cout << "5. numero (valor): \t " << numero << endl;
+    cout << "5. numero (valor): \t " << numero << endl;  // 5
 
     cout << "\n\n";
     system("pause");

@@ -19,7 +19,7 @@ int main()
 {
     int qtd;
     int bytes;
-    int* pVetor;
+    int* pVetor = NULL;
 
 	cout << "Digite a quantidade de elementos: ";
 	cin >> qtd;
@@ -28,11 +28,11 @@ int main()
 	pVetor = new int[qtd];
 
 	if(pVetor == NULL) {
-		cout << "ERRO!";
+		cout << "ERRO: Bloco nao conseguiu ser alocado!";
 		return 1;
 	}
 
-	cout << "pVetor (endereco): " << pVetor << endl;    
+	cout << "pVetor (conteudo): " << pVetor << endl;    
     
 	exibeVetor(pVetor, qtd); // vai exibir o bloco recem alocado, com lixos.
 
@@ -44,6 +44,7 @@ int main()
 
     exibeVetor(pVetor, qtd);
 
+	// Desaloco meu bloco:
 	delete[] pVetor;
 
 	exibeVetor(pVetor, qtd);
