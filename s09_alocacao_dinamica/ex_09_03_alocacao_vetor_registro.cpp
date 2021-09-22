@@ -20,7 +20,7 @@ int main()
 	
 	sFicha* vetorFicha = new sFicha[qtd];
 
-    for(int i=0; i <= qtd-1; i++)
+    for(int i=0; i < qtd; i++)
     {
         cout << endl << "Informe o nome da pessoa ("<<i+1<<" de "<<qtd<<"): ";
         getline( cin, vetorFicha[i].nome );
@@ -30,7 +30,7 @@ int main()
         fflush(stdin); // limpa o buffer de entrada (teclado)
     }
 
-    for(int i=0; i <= qtd-1; i++) 
+    for(int i=0; i < qtd; i++) 
     {
         cout << endl << "Nome: " << vetorFicha[i].nome;
         cout << endl << "Idade: " << vetorFicha[i].idade << endl;

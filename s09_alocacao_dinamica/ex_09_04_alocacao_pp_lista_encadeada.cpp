@@ -70,20 +70,20 @@ void inserirInicio(tElemento** ppInicio, int mat, string nome)
 
 int main()
 {
-	tElemento* inicio = NULL;
+	tElemento* pInicio = NULL;
 
-	inserirInicio(&inicio, 1, "objeto1"); 
-	percorrer(inicio);
+	inserirInicio(&pInicio, 1, "objeto1"); 
+	percorrer(pInicio);
 	system("pause");
 	system("cls");
 
-	inserirInicio(&inicio, 2, "objeto2");
-	percorrer(inicio);
+	inserirInicio(&pInicio, 2, "objeto2");
+	percorrer(pInicio);
 	system("pause");
 	system("cls");
 
-	inserirInicio(&inicio, 3, "objeto3");	
-	percorrer(inicio);
+	inserirInicio(&pInicio, 3, "objeto3");
+	percorrer(pInicio);
 	system("pause");
 
 	return 0;

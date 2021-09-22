@@ -22,10 +22,12 @@ int* criarVetorAleatorio(int valorInicial, int tam)
 	int r, temp = 0;
 	int* pVetor = new int[tam];
 		
+	// Seed da rand(), 
+	// que garante numeros realmente aleatórios em cada execução
 	srand( time(NULL) );
  	
  	for(int i=0; i<tam; i++) {
- 		pVetor[i] = valorInicial + i;
+ 		pVetor[i] = valorInicial + i; // 100..109
 	}
  	
 	for(int i=0; i<tam; i++) {
@@ -41,8 +43,11 @@ int* criarVetorAleatorio(int valorInicial, int tam)
 int main()
 {
     int* vetor = NULL;
-	int tamanho = 10;
-			
+	int tamanho;
+	
+	cout << "Digite a quantidade de elementos: ";
+	cin >> tamanho;
+	
 	vetor = criarVetorAleatorio(100, tamanho);
 	
     cout << "Exibindo o vetor: \n";
@@ -51,7 +56,7 @@ int main()
 	// Desaloco meu bloco:
 	delete[] vetor;
 
-    cout << "\n\n");
+    cout << "\n\n";
 	system("pause");
 
 	return 0;
