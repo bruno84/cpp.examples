@@ -14,7 +14,7 @@ int main()
 	ifstream fin;		
 	
 	// Associa objeto com o arquivo
-	fin.open("arquivo_binario.bsm", ios_base::in | ios_base::binary); 
+	fin.open("arquivo_binario.dat", ios_base::binary); 
 		
 	TipoBruno bloco[3];
 	int i;
@@ -25,7 +25,7 @@ int main()
 	}
 
 	// Loop de leitura do arquivo. Retorna a quantidade de elementos lidos.
-	while ( fin.read( (char *) &bloco, sizeof(TipoBruno) * 3) )
+	while ( fin.read( (char*) &bloco, sizeof(TipoBruno) * 3) )
 	{
 		for(int i=0; i<3; i++) {
 			cout << bloco[i].numero << " " << bloco[i].letra << "\n";

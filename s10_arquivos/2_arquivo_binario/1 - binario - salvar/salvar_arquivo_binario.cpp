@@ -14,7 +14,7 @@ int main()
 	ofstream fout;		
 	
 	// Associa objeto com o arquivo
-	fout.open("arquivo_binario.bsm", ios_base::out | ios_base::binary); 
+	fout.open("arquivo_binario.dat", ios_base::binary); 
 	
 	TipoBruno bloco1[3];
 	TipoBruno bloco2[3];
@@ -38,8 +38,8 @@ int main()
  		return 1;
 	}
 
- 	fout.write((char*) &bloco1, sizeof(TipoBruno) * 3 );
-	fout.write((char*) &bloco2, sizeof(TipoBruno) * 3 );
+ 	fout.write( (char*) &bloco1, sizeof(TipoBruno) * 3 );
+	fout.write( (char*) &bloco2, sizeof(TipoBruno) * 3 );
 
 	fout.close();
 

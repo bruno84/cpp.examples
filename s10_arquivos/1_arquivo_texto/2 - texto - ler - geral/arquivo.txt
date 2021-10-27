@@ -1,3 +1,0 @@
-arroz 3.1
-feijao 4.5
-farinha 2.5

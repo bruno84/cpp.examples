@@ -16,8 +16,8 @@ int main()
  
   	// fout
   	fout << "Meu texto inicial! Pode ter acentos, não é? SIM! =) \n";
-	
-	fout << "Meu numero = " << 1234;
+	int num = 1234;
+	fout << "Meu numero = " << num;
 	fout << "\n";
 	
 	fout << 7.5;   		// 7.5
