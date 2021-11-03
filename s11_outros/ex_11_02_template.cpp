@@ -4,11 +4,11 @@ using namespace std;
 
 // Prof: Bruno Monteiro
 
-template <typename T>
+template <typename T>			// Generic ou Programação Genérica
 T soma(T &param1, T &param2)
 {
     T result = param1 + param2;
-    cout << param1 << " + " << param1 << " = " << result << endl;
+    cout << param1 << " + " << param2 << " = " << result << endl;
     return result;
 }
 
