@@ -15,7 +15,7 @@ int main()
 
     cout << "Digite a quantidade de horas para converter para minutos: ";
     cin >> horas;       
- 
+
     result = horas * FATOR;  
 
     cout << "Em " << horas << " hora(s) ha " << result << " minutos \n\n";

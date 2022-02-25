@@ -7,7 +7,7 @@ using namespace std;
 int varGlobal = 5;
 int x = 10;
 
-void minhaFuncao(int varArgum) 
+void minhaFuncao(int varParam) 
 { 
 	cout << "2. iniciando minhaFuncao \n\n"; 
 	
@@ -16,7 +16,7 @@ void minhaFuncao(int varArgum)
     
     cout << "varGlobal = " << varGlobal << endl; 	//  5
     cout << "varLocal  = " << varLocal << endl; 	// 20
-    cout << "varArgum  = " << varArgum << endl;		// 40
+    cout << "varParam  = " << varParam << endl;		// 40
 	
 	cout << "x = " << x << endl<<endl; 		// 1000
 	

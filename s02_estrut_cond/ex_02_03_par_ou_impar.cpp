@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// Objetivo: identificar se um numero eh impar ou par.
+
 int main() 
 { 
     int numero; 

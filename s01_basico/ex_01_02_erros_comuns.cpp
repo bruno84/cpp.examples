@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>        // Digitar errado nomes de bibliotecas, funções ou variáveis.
+#include <cmath>        // Digitar errado nomes de bibliotecas, funcoes ou variaveis.
 
 using namespace std;
 
@@ -8,15 +8,16 @@ using namespace std;
 int main()	
 {
 	int n;
-	float raiz;	        // TOP3! Esquecer de declarar variável ou errar seu tipo.
+	float raiz;	        // TOP3! Esquecer de declarar variavel ou errar seu tipo.
 	
-    cout << "Digite um numero: ";  
+	cout << "Digite um numero: ";
 	cin >> n;	        // Esquecer o cin ou errar as setas
-
-	raiz = sqrt( n );
+	
+	raiz = fatorial( n );
 	cout << "Raiz quadrada de " << n << " eh " << raiz << endl;
-
-    system("pause");	// TOP1! Esquecer o ponto e virgula no final de cada instrução	
-    return 0;	
-	                    // TOP2! Não fechar ( ) ou { } ou ' ' ou " " 
+	
+	system("pause");	// TOP1! Esquecer o ponto e virgula no final de cada instrucao	
+	return 0;	
+	                    // TOP2! Nao fechar ( ) ou { } ou ' ' ou " " 
 }
+

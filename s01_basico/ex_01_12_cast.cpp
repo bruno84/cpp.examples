@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Objetivo: conversões (cast)
+// Objetivo: conversoes (cast)
 
 int main()
 {

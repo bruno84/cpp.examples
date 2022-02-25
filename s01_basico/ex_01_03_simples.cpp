@@ -6,21 +6,21 @@ using namespace std;
 
 int main()
 {
-    int horas;          //declaração 
-    int fator = 60;     //inicialização
-    int result;         //declaração 
+    int horas;          //declaracao 
+    int fator = 60;     //inicializacao
+    int result;         //declaracao 
 
-    // OBS: opcionalmente, declarações do mesmo tipo podem ser feitas na mesma linha.
+    // OBS: opcionalmente, declaracoes do mesmo tipo podem ser feitas na mesma linha.
 
     cout << "Digite a quantidade de horas para converter para minutos: ";
     cin >> horas;       // entrada do valor pelo teclado
  
-    result = horas * fator;  // operação e atribuição
+    result = horas * fator;  // operacao e atribuicao
     
-    /* OBS: a última atribuição substitui o valor
-       da atribuição anterior */
+    /* OBS: a ultima atribuicao substitui o valor
+       da atribuicao anterior */
 
-    cout << "Em " << horas << " hora(s) há " << result << " minutos \n\n";
+    cout << "Em " << horas << " hora(s) ha " << result << " minutos\n\n";
 
     system("pause");
     return 0;	

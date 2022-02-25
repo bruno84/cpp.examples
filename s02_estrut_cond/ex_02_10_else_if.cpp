@@ -17,16 +17,15 @@ int main()
     { 
         cout << "Aprovado  \n"; 
     } 
-    else 
-	{
-		// Recuperacao ou Reprovado
-		if(media >= 3.5) {
-		    cout << "Recuperacao  \n"; 
-		} 
-		else {
-		    cout << "Reprovado  \n";  
-		}
-    }
+    else if(media >= 5) {
+		cout << "Alertar aluno  \n"; 
+	} 
+	else if(media >= 3.5) {
+		cout << "Recuperacao  \n"; 
+	} 
+	else {
+		cout << "Reprovado  \n";  
+	}
     
     system("pause");
     return 0;    

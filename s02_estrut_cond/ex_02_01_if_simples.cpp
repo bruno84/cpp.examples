@@ -8,20 +8,19 @@ using namespace std;
 
 int main() 
 { 
-    float media; 
-    
-    cout << "Qual a media? "; 
-    cin >> media; 
- 
-    if(media >= 7) {
-		// O primeiro bloco eh executado quando a condicao (media >= 7) for verdade
-    	cout << "Aprovado  \n";
-	}
-    else {
-		// O segundo bloco eh executado quando a condicao (media >= 7) for falsa
-        cout << "Recuperacao ou Reprovado  \n";  
-	}
+	float media; 
 	
-    system("pause");
-    return 0;    
+	cout << "Qual a media? "; 
+	cin >> media; 
+	
+	if(media >= 7) {
+		cout << "Aprovado  \n";
+	}
+	else {
+		cout << "Recuperacao ou Reprovado  \n";  
+		
+	}
+
+	system("pause");
+	return 0;    
 } 

@@ -13,10 +13,12 @@ int main()
     // ADICIONANDO NO LIMITE SUPERIOR:
     cout << "sigShort: \t" << sigShort << endl;
     cout << "unsigShort: \t" << unsigShort << endl;
-    cout << endl << "Adiciona 1 para cada..." << endl << endl;
+    
+	cout << endl << "Adiciona 1 para cada..." << endl << endl;
     sigShort = sigShort + 1;
     unsigShort = unsigShort + 1;
-    cout << "Agora sigShort tem \t" << sigShort << endl;            // -32768
+    
+	cout << "Agora sigShort tem \t" << sigShort << endl;            // -32768
     cout << "Agora unsigShort tem \t" << unsigShort << endl<<endl;  //  32768
 
     // REMOVENDO NO LIMITE INFERIOR:
@@ -25,9 +27,11 @@ int main()
     cout << "sigShort tem \t" << sigShort << endl;
     cout << "unsigShort tem \t" << unsigShort << endl;
     cout << endl << "Remove 1 de cada..." << endl << endl;
-    sigShort = sigShort - 1;
+    
+	sigShort = sigShort - 1;
     unsigShort = unsigShort - 1;
-    cout << "Agora sigShort tem \t" << sigShort << endl;            // -1
+    
+	cout << "Agora sigShort tem \t" << sigShort << endl;            // -1
     cout << "Agora unsigShort tem \t" << unsigShort << endl<<endl;  // 65535
 
     system("pause");

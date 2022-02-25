@@ -1,9 +1,9 @@
 #include <iostream>
-#include <limits>           // Para ter a máxima precisão
+#include <limits>           // Para ter a maxima precisao
 
 using namespace std; 
 
-// Objetivo: variações do cin e cout
+// Objetivo: variacoes do cin e cout
 // Ver: https://www.cplusplus.com/reference/ios/ios_base/setf/
 
 int main()	                   
@@ -11,7 +11,7 @@ int main()
     // ENTRADA: ler varios valores juntos
     int var1, var2, var3;
     
-    cout << "Informe tres valores (separados por espaco ou ENTER): ";
+    cout << "Informe tres valores (separados por espaco ou ENTER): \n";
     cin >> var1 >> var2 >> var3;
 
     cout << "Soma: " << var1 + var2 + var3 << endl<<endl<<endl;
@@ -25,7 +25,7 @@ int main()
 	cout << "h: " << h << " m: " << m << "\a\n\n\n";
 
 
-    // SAÍDA: setf
+    // SAIDA: setf
     /*  Mask:           Option:
         adjustfield:    left, right or internal	
         basefield:      dec, oct or hex	
@@ -43,9 +43,9 @@ int main()
     cout.unsetf(ios::floatfield);           // desfaz
     cout << "Valor: " << valor << endl<<endl;
 
-    //cout.setf(ios::scientific, ios::floatfield);
-    cout << scientific;
-    cout.precision(2);
+    cout << scientific;		// notacao cientifica
+    //cout << fixed;		// notacao comum com ponto
+    cout.precision(6);
     cout << "Valor: " << valor <<endl;
 
     //cout.setf(ios::fixed, ios::floatfield);
@@ -53,7 +53,7 @@ int main()
     cout.precision(2);
     cout << "Valor: " << valor <<endl<<endl;
 
-    cout.precision(numeric_limits<double>::max_digits10);
+    cout.precision(numeric_limits<double>::digits10);
     cout << "Valor: " << valor <<endl;
 
     system("pause");
