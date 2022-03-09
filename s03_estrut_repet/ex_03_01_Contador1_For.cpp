@@ -13,12 +13,13 @@ int main()
     cin >> vi; 
     cout << "Qual o valor final: "; 
     cin >> vf; 
-    
-    for(cont = vi; cont <= vf; cont++) {
-        cout << "cont (durante): " << cont << endl;
+        
+    for(cont = vi; cont <= vf; cont++)
+	{
+        cout << "cont (durante): " << cont << endl;	
     }
-    
-    cout << "cont (final): " << cont << endl;
+ 
+    cout << "cont (final): " << cont << endl;	 
 
     system("pause");
     return 0;

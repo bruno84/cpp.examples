@@ -10,17 +10,18 @@ int main()
     int vi, vf, somatorio; 
  
     cout << "Qual o valor inicial: "; 
-    cin >> vi; 
+    cin >> vi; // 4
     cout << "Qual o valor final: "; 
-    cin >> vf; 
+    cin >> vf; // 9
     
     somatorio = 0;
     
-    for(int cont = vi; cont <= vf; cont++) {
+    for(int cont = vi; cont <= vf; cont++) 
+	{
         somatorio = somatorio + cont;
     }
     
-    cout << "somatorio: " << somatorio << endl;
+    cout << "somatorio final: " << somatorio << endl;
 	  
     system("pause");
     return 0;
