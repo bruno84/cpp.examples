@@ -16,8 +16,8 @@ int main()
     cout << "Endereco de str2: " << &str2 << endl;	
     cout << "Tamanho de str2: " << strlen(str2) << endl;	// 4
     
-    strcpy(str2, "abcdefghijqlmnopqrst"); 
-    cout << "Endereco de str2: " << &str2 << endl;			// Endereço continua o mesmo
+    strcpy(str2, "12345678901234567890"); 
+    cout << "Endereco de str2: " << &str2 << endl;			// Endereço pode continuar o mesmo
     cout << "Tamanho de str2: " << strlen(str2) << endl;	// 20
     
     // OBS: internamente, outro espaço de memória é alocado para a nova string.

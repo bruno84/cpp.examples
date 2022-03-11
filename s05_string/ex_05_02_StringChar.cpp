@@ -18,7 +18,8 @@ int main()
 
     cout << "nome: " << nome << "\n\n";
 
-	tam = strlen(nome);				// Obtém a quantidade de caracteres úteis (até o \0 que delimita o fim da string)
+	// Obtém a quantidade de caracteres úteis (até o \0 que delimita o fim da string)
+	tam = strlen(nome);				
 	cout << "tam: " << tam << "\n\n";
 
     for(int i=0; i<tam; i++) {
@@ -27,8 +28,9 @@ int main()
 
 	cout << "\n\n";
 
+	// Você vai perceber que vão ser exibidos alguns caracteres "lixo"
     for(int i=0; i<TAM_MAX; i++) {
-    	cout << "[" << i << "]: " << nome[i] << endl;	// Você vai perceber que vão ser exibidos alguns caracteres "lixo"
+    	cout << "[" << i << "]: " << nome[i] << endl;	
     }
 
 	cout << "\n\n";

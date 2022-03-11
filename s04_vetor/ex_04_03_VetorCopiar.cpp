@@ -4,8 +4,8 @@ using namespace std;
 
 // Prof: Bruno Monteiro
 
-void exibeVetor(int* pVet, int size) 
-{
+void exibeVetor(int* pVet, int size) 	// OU: int pVet[] 
+{  	
 	// OBS: cuidado com as fronteiras:
     for(int i=0; i < size; i++) {
         cout << "Elemento " << i << " : " << pVet[i] << endl;

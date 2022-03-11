@@ -23,6 +23,7 @@ int main()
 	// Mesma logica que usamos com vetor de inteiros
     for(i=0, j=tam-1; i < tam; i++, j--) {
         copia[j] = original[i];
+        cout << "c: " << copia[j] << "\n\n";
     }
 
     /* 
