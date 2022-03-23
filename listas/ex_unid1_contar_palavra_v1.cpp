@@ -6,7 +6,6 @@ using namespace std;
 // Prof: Bruno Monteiro
 // Objetivo: contar a frequencia de palavras de um texto. Versao1: estatica.
 
-
 struct tReg
 {
     string palavra;
