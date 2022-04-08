@@ -9,17 +9,24 @@ OBS: enum (enumeracao) eh usada quando conhecemos o
 conjunto de valores que uma variavel pode assumir 
 */
 
-// DECLARACAO
+// DECLARACAO PADRAO
 
+// Declaração: default: os valores começam em 0 ate n-1
 enum Cores {VERMELHO, AMARELO, VERDE, AZUL, PRETO};
 // 				0, 		 1, 	 2, 	3, 	  4
 
+// Declaração: atribuir todos: cada valor eh informado explicitamente
 enum Bits {UM=1, DOIS=2, QUATRO=4, OITO=8};
 
+// Declaração: atribuir inicio: eh informado apenas o valor inicial
 enum Meses {JAN=1, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ};
 //			  1		2	 3	  4	   5	6	 7	  8	   9   10	11	 12
 
-// OBS: esta notacao permite introduzir escopo ao enum, tratando-os como classes:
+// CUIDADO! podem haver constantes com o mesmo valor!
+
+// DECLARACAO COMO CLASSE
+// Esta notacao permite introduzir escopo ao enum, tratando-os como classes.
+// Isto eh util quando ha elementos repetidos entre diferentes enums.
 enum class TamPacote { PEQUENO, GRANDE, LARGO, JUMBO};
 //					  	0		   1	  2	     3
 
@@ -28,24 +35,24 @@ enum class TamCamisa { PEQUENO, MEDIO, GRANDE, EXTRAGRANDE };
 
 int main()
 {	
-    // ACESSANDO
-    cout << "enum cores, ex: " << VERMELHO << endl;		// 0
-    cout << "enum bits, ex: " << OITO << endl;			// 8
-	cout << "enum meses, ex: " << FEV << endl;			// 2
+    // ACESSANDO    
+    cout << "enum Cores: \t AZUL: \t"  << AZUL << endl;		// 3
+    cout << "enum Bits:  \t OITO: \t"  << OITO << endl;		// 8
+	cout << "enum Meses: \t FEV: \t"   << FEV << endl;		// 2
 	
-	int cor1 = AMARELO;
-	Cores cor2 = VERDE; // So pode receber elemento do enum "cores"
+	int   cor1 = VERDE;
+	Cores cor2 = PRETO; 	// So pode receber elemento do enum "cores"
 		
-	cout << "cor1: " << cor1 << endl;	// 1
-	cout << "cor2: " << cor2 << endl;	// 2
+	cout << "cor1: " << cor1 << endl;	// 2
+	cout << "cor2: " << cor2 << endl;	// 4
 	
 	// Acessando um enum como objeto:
 	// OBS: as linhas abaixo so funcionam com compilador da versao C++11
-	int leite  = (int) TamPacote::GRANDE; 	// fiz cast explicito
-  	int social = (int) TamCamisa::GRANDE; 	// fiz cast explicito
+	int tamPacoteGrande = (int) TamPacote::GRANDE; 	// fiz cast explicito
+  	int tamCamisaGrande = (int) TamCamisa::GRANDE; 	// fiz cast explicito
 
-	cout << "leite: "  << leite << endl;	// 1
-	cout << "social: " << social << endl;	// 2
+	cout << "tamPacoteGrande: " << tamPacoteGrande << endl;	// 1
+	cout << "tamCamisaGrande: " << tamCamisaGrande << endl;	// 2
 
     printf("\n\n");
     system("pause");

@@ -3,37 +3,34 @@
 using namespace std;
 
 // Prof: Bruno Monteiro
-
-// OBS: em uma uniao, apenas um campo pode ser atribuido.
+// Objetivo: exemplificar o uso de union 
 
 // DECLARACAO 
-union uIdentificador
+// OBS: em uma uniao, apenas um campo pode ser atribuido.
+union Identificador
 {
-    int codigo;
-    int serial;
+    long codigo;
+    long serial;
 };
 // OBS: nao se pode usar tipo "string" em union
 
 int main()
 {
-    uIdentificador identificador;
+    Identificador meuID;
 
     // ATRIBUINDO
     cout << "Informe o codigo: ";
-	cin >> identificador.codigo;
+	cin >> meuID.codigo;
     	
     cout << "Informe o serial: ";
-	cin >> identificador.serial;
+	cin >> meuID.serial;
+
+	// OBS: prevalece o valor da ultima atribuicao.
 
     // ACESSANDO
-    cout << "codigo: " << identificador.codigo << endl;
-    cout << "serial: " << identificador.serial << endl;
+    cout << "codigo: " << meuID.codigo << endl;
+    cout << "serial: " << meuID.serial << endl;
 	
-	/* 
-		OBS: se houver mais de um campo atribuido, 
-		prevalece o valor da ultima atribuicao.
-	*/
-
     printf("\n\n");
     system("pause");
     return 0;
