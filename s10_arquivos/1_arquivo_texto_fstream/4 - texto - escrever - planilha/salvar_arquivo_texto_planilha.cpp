@@ -5,21 +5,21 @@ using namespace std;
 
 // Adicionar esse trecho para permitir , em vez de .
 template <typename T>
-struct comma_separator : std::numpunct<T> {
-    typename std::numpunct<T>::char_type do_decimal_point() const {
+struct comma_separator : numpunct<T> {
+    typename numpunct<T>::char_type do_decimal_point() const {
         return ',';
     }
 };
 // Para streams de out
 template <typename T>
-std::basic_ostream<T>& comma_sep(std::basic_ostream<T>& os) {
-    os.imbue(std::locale(std::locale(""), new comma_separator<T>));
+basic_ostream<T>& commaSep(basic_ostream<T>& os) {
+    os.imbue(locale(locale(""), new comma_separator<T>));
     return os;
 }
 // Para streams de in
 template <typename T>
-std::basic_istream<T>& comma_sep(std::basic_istream<T>& os) {
-    os.imbue(std::locale(std::locale(""), new comma_separator<T>));
+basic_istream<T>& commaSep(basic_istream<T>& os) {
+    os.imbue(locale(locale(""), new comma_separator<T>));
     return os;
 }
 
@@ -34,15 +34,16 @@ int main()
     }
  
  	// Defina quais streams terao mudanca de pontuacao
- 	cout << comma_sep; 
- 	fout << comma_sep;
+ 	cout << commaSep; 
+ 	fout << commaSep;
  	
  	float v1 = 11.50;
 	float v2 = 12.50;
 	string p1 = "arroz";
 	string p2 = "feijao";
 	
-	cout << v1; // so pra testar
+	cout << v1 << endl; // so pra testar
+	cout << v2 << endl; // so pra testar
 	
 	fout << p1<<"\t"<<v1<<"\n";
 	fout << p2<<"\t"<<v2<<"\n";

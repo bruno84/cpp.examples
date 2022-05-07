@@ -23,7 +23,7 @@ int main()
 	fout << 7.5;   		// 7.5
 	fout << "\n";
 	
-	fout.setf(ios_base::fixed, ios_base::floatfield);
+	fout << fixed; // scientific ou fixed
 	fout.precision(2);
 	fout << 7.5; 		// 7.50
 	fout << "\n";

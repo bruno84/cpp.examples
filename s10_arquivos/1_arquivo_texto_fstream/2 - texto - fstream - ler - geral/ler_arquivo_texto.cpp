@@ -20,21 +20,10 @@ int main()
 	while( fin.eof() == false )
 	{		
 		fin >> produto >> valor;
-		
-		if( fin.eof() ) { break; }
-		
+				
 		cout << "produto: " << produto << " valor: " << valor << "\n";
 	}
-    
-
-	// Outras verificacoes
-	if ( fin.eof() ) {
-		cout << "Fim de arquivo alcancado.\n";
-	} 
-	else if ( fin.fail() ) {
-		cout << "Tipo incorreto de dado na entrada.\n";
-	}
-    	
+        	
     // Libera o arquivo
 	fin.close();
 	
