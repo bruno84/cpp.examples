@@ -3,6 +3,9 @@
 
 using namespace std;
 
+// Autor: Bruno Monteiro
+// Objetivo: Escrever um arquivo binario usando: ofstream
+
 struct TipoBruno {
 	int numero;
 	char letra;
@@ -16,8 +19,10 @@ int main()
 	// Associa objeto com o arquivo
 	fout.open("arquivo_binario.dat", ios_base::binary); 
 	
-	TipoBruno bloco1[3];
-	TipoBruno bloco2[3];
+	int size = 3;
+	
+	TipoBruno bloco1[size];
+	TipoBruno bloco2[size];
 	
 	bloco1[0].numero = 1;
 	bloco1[0].letra = 'A';
@@ -38,8 +43,8 @@ int main()
  		return 1;
 	}
 
- 	fout.write( (char*) &bloco1, sizeof(TipoBruno) * 3 );
-	fout.write( (char*) &bloco2, sizeof(TipoBruno) * 3 );
+ 	fout.write( (char*) &bloco1, sizeof(TipoBruno) * size );
+	fout.write( (char*) &bloco2, sizeof(TipoBruno) * size );
 
 	fout.close();
 

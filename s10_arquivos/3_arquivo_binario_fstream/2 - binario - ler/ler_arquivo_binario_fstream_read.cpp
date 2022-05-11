@@ -3,6 +3,9 @@
 
 using namespace std;
 
+// Autor: Bruno Monteiro
+// Objetivo: Leitura de arquivo binario usando: ifstream
+
 struct TipoBruno {
 	int numero;
 	char letra;
@@ -15,9 +18,9 @@ int main()
 	
 	// Associa objeto com o arquivo
 	fin.open("arquivo_binario.dat", ios_base::binary); 
-		
-	TipoBruno bloco[3];
-	int i;
+	
+	int size = 3;
+	TipoBruno bloco[size];
 
  	if(fin.is_open() == false) {
 		cout << "ERRO: nao foi possivel abrir o arquivo \n";
@@ -25,9 +28,9 @@ int main()
 	}
 
 	// Loop de leitura do arquivo. Retorna a quantidade de elementos lidos.
-	while ( fin.read( (char*) &bloco, sizeof(TipoBruno) * 3) )
+	while ( fin.read( (char*) &bloco, sizeof(TipoBruno) * size) )
 	{
-		for(int i=0; i<3; i++) {
+		for(int i=0; i<size; i++) {
 			cout << bloco[i].numero << " " << bloco[i].letra << "\n";
 		}
 
