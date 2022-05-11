@@ -3,10 +3,13 @@
 
 using namespace std;
 
+// Autor: Bruno Monteiro
+// Objetivo: Leitura de arquivo usando: ifstream
+
 int main() 
 {
 	ifstream fin;				// Objeto do arquivo
-	fin.open("arquivo.txt");   // Associa objeto com o arquivo
+	fin.open("arquivo.txt");    // Associa objeto com o arquivo
 		
 	string produto;
 	float valor;
@@ -17,7 +20,8 @@ int main()
     }
 
 	// Loop de leitura do arquivo
-	while( fin.eof() == false )
+	// OBS: melhor good() do que eof(), pois verifica todos os estados de erro: eofbit, failbit and badbit
+	while( fin.good() == true )
 	{		
 		fin >> produto >> valor;
 				

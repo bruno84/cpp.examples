@@ -3,6 +3,10 @@
 
 using namespace std;
 
+// Autor: Bruno Monteiro
+// Objetivo: Leitura de arquivo usando: ifstream
+// OBS: leitura da linha inteira
+
 int main() 
 {
 	ifstream fin;				// Objeto do arquivo
@@ -16,9 +20,9 @@ int main()
     }
 
 	// Loop de leitura do arquivo
-	while( fin.eof() == false )
+	while( fin.good() == true )
 	{		
-		fin >> getline(fin, linha); // OBS: '\n' eh o separador de linha padrao
+		getline(fin, linha); // OBS: '\n' eh o separador de linha padrao
 				
 		cout << "linha: " << linha << endl;
 	}

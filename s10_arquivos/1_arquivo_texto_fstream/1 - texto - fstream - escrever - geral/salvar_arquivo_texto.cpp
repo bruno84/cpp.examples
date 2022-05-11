@@ -3,14 +3,17 @@
 
 using namespace std;
 
+// Autor: Bruno Monteiro
+// Objetivo: Escrever um arquivo usando: ofstream
 
 int main() 
 {
 	ofstream fout;				// Objeto do arquivo
 	fout.open("arquivo.txt");   // Associa objeto com o arquivo
-		
+			
+	// ATENCAO: retorna false quando: nao ha espaco em disco ou ha protecao read-only.
 	if(fout.is_open() == false) {
-	    cout << "ERRO: nao foi possivel abrir o arquivo \n";
+	    cout << "ERRO: nao foi possivel acessar o arquivo \n";
 		return 1;
     }
  
@@ -27,12 +30,12 @@ int main()
 	fout.precision(2);
 	fout << 7.5; 		// 7.50
 	fout << "\n";
-	
-	fout << "Falow!";
-
+	   
+    cout << "Sucesso! \n\n";
+    
     // Libera o arquivo
 	fout.close();
-	
+    
     system("pause");
 	return 0;
 }

@@ -2,4 +2,3 @@ Meu texto inicial! Pode ter acentos, não é? SIM! =)
 Meu numero = 1234
 7.5
 7.50
-Falow!
