@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     int int1, int2, result;
-    
+	    
 	int1 = 11;
 	int2 = 4;
 

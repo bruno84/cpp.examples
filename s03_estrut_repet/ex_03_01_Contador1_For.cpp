@@ -7,14 +7,14 @@ using namespace std;
 
 int main()
 {
-    int cont, vi, vf; 
+    int vi, vf; 
  
     cout << "Qual o valor inicial: "; 
     cin >> vi; 
     cout << "Qual o valor final: "; 
     cin >> vf; 
         
-    for(cont = vi; cont <= vf; cont++)
+    for(int cont = vi; cont <= vf; cont++) 
 	{
         cout << "cont (durante): " << cont << endl;	
     }

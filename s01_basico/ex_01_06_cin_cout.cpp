@@ -19,10 +19,10 @@ int main()
     // ENTRADA: ler com uma mascara 
     int h, m;
 		
-	cout << "Digite a hora: __:__\b\b\b\b\b";
+	cout << "Digite a \t\t hora: __:__\b\b\b\b\b";
 	cin >> h >> m;
 
-	cout << "h: " << h << " m: " << m << "\a\n\n\n";
+	cout << "h: " << h << " m: " << m << "\a\a\a\a\n\n\n";
 
 
     // SAIDA: setf
@@ -33,28 +33,30 @@ int main()
 
     double valor = 123456789123456789;
 
-    cout << "Valor: " << valor << endl<<endl;
+    cout << "Valor1: " << valor << endl<<endl;
 
+	// METODO 1
     cout.setf(ios::scientific, ios::floatfield);
-    cout << "Valor: " << valor << endl;
+    cout << "Valor2: " << valor << endl;
     cout.setf(ios::fixed, ios::floatfield);
-    cout << "Valor: " << valor << endl<<endl;
+    cout << "Valor3: " << valor << endl<<endl;
     
     cout.unsetf(ios::floatfield);           // desfaz
-    cout << "Valor: " << valor << endl<<endl;
+    cout << "Valor4: " << valor << endl<<endl;
 
+	// METODO 2
     cout << scientific;		// notacao cientifica
     //cout << fixed;		// notacao comum com ponto
     cout.precision(6);
-    cout << "Valor: " << valor <<endl;
+    cout << "Valor5: " << valor <<endl;
 
     //cout.setf(ios::fixed, ios::floatfield);
     cout << fixed;
     cout.precision(2);
-    cout << "Valor: " << valor <<endl<<endl;
+    cout << "Valor6: " << valor <<endl<<endl;
 
     cout.precision(numeric_limits<double>::digits10);
-    cout << "Valor: " << valor <<endl;
+    cout << "Valor7: " << valor <<endl;
 
     system("pause");
     return 0;     

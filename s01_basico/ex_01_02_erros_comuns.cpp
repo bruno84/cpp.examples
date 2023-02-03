@@ -13,7 +13,7 @@ int main()
 	cout << "Digite um numero: ";
 	cin >> n;	        // Esquecer o cin ou errar as setas
 	
-	raiz = fatorial( n );
+	raiz = sqrt( n );
 	cout << "Raiz quadrada de " << n << " eh " << raiz << endl;
 	
 	system("pause");	// TOP1! Esquecer o ponto e virgula no final de cada instrucao	

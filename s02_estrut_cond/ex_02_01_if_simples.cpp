@@ -17,8 +17,7 @@ int main()
 		cout << "Aprovado  \n";
 	}
 	else {
-		cout << "Recuperacao ou Reprovado  \n";  
-		
+		cout << "Recuperacao ou Reprovado  \n";  	
 	}
 
 	system("pause");

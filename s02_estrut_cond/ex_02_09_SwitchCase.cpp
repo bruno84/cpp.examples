@@ -23,7 +23,7 @@ int main()
             cout << "Mas nao acredito nessas coisas! \n"; 
         	break;
 
-        case  4 :  
+        case  4:  
         case 13 : 
 	    case 17 : 
 			cout << "Dizem que 4, 13 e 17 dao azar  \n"; 

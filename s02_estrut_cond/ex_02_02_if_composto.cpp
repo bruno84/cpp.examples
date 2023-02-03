@@ -19,7 +19,7 @@ int main()
     } 
     else 
 	{
-		// Recuperacao ou Reprovado
+		 // Recuperacao ou Reprovado
 		if(media >= 3.5) {
 		    cout << "Recuperacao  \n"; 
 		} 

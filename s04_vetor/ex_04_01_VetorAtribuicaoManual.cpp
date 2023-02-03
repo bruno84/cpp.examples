@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {    
-	int meuVetor[3];
+	int meuVetor[5] = {100, 200, 300};
 	
 	cout << "size: " << sizeof(meuVetor) << "bytes" << endl;	// bytes
 	
@@ -19,6 +19,8 @@ int main()
 	cout << meuVetor[0] << endl;  // Será impresso 10
 	cout << meuVetor[1] << endl;  // Será impresso 20
 	cout << meuVetor[2] << endl;  // Será impresso 30
+	cout << meuVetor[3] << endl;  // Será impresso ?
+	cout << meuVetor[4] << endl;  // Será impresso ?
 	
 	cout << "\n" << "Atribuicao pelo teclado... \n";
 	
